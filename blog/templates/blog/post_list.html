@@ -2,17 +2,8 @@
     <head>
         <title>Not Terrible Bread Blog</title>
     </head>
-    <body>
-        <div>
-            <h1><a href="/">Not Terrible Bread Blog</a></h1>
-        </div>
-
-        {% for post in posts %}
-   <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+  {% for post in posts %}
+    {{ post }}
 {% endfor %}
 
     </body>
